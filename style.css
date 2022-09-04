@@ -1,0 +1,40 @@
+.container {
+    background-color: darksalmon;
+    width: 500px;
+    height: 300px;
+    display: grid;
+    /* grid-template-columns: 200px auto 100px; */    
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    /* column-gap: 50px;
+    row-gap: 50px; */
+    gap: 50px 50px;
+    grid-template-areas: "A A A A"
+                        "dos dos tres tres"
+                        "dos dos tres tres";
+    /* justify-items: start;
+    align-items: stretch; */
+    justify-content: center;
+}
+
+.uno{
+    grid-area: A;
+}
+
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+
+p {
+    background-color: darkred;
+    border: 2px solid black;
+    color: white;
+    margin: 0px;
+    /* width: 100px;
+    height: 100px; */
+}
